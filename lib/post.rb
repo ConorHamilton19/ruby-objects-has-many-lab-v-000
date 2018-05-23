@@ -10,4 +10,11 @@ class Post
   def self.all 
     @@all 
   end
+  
+  def author_name
+    if Post.author 
+      Post.author.name 
+    else nil
+    end
+  end
 end
